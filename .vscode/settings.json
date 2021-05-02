@@ -1,0 +1,15 @@
+{
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true,
+  "deno.path": "/usr/local/bin/deno",
+  "deno.config": "./tsconfig.json",
+  "deno.importMap": "./import_map.json",
+  "cSpell.words": [
+    "deno"
+  ],
+  "cSpell.ignoreWords": [],
+  "cSpell.ignorePaths": []
+}
