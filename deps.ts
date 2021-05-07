@@ -1,9 +1,12 @@
-import jsTree, {
+import {
+  exporter,
   filter,
   map,
+  parse,
   ROOT_ID,
   toRows,
   toTree,
+  version,
 } from "@zhengxs/js.tree/js.tree.esm.js";
 
 import type {
@@ -11,11 +14,22 @@ import type {
   ID,
   Node,
   None,
+  Predicate,
   Row,
+  Transform,
 } from "@zhengxs/js.tree/types.d.ts";
 
-const JS_TREE_VERSION = jsTree.version;
+const JS_TREE_VERSION = version;
 
-export type { Exporter, ID, Node, None, Row };
+export type { Exporter, ID, Node, None, Predicate, Row, Transform };
 
-export { filter, JS_TREE_VERSION, map, ROOT_ID, toRows, toTree };
+export {
+  exporter,
+  filter,
+  JS_TREE_VERSION,
+  map,
+  parse,
+  ROOT_ID,
+  toRows,
+  toTree,
+};

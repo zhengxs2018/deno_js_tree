@@ -9,9 +9,9 @@ Deno.test("test toRows()", function () {
   ]);
 
   const expected = [
+    { id: 2, parentId: null },
     { id: 1, parentId: null },
     { id: 3, parentId: 1 },
-    { id: 2, parentId: null },
   ];
 
   assertEquals(result, expected);
@@ -27,9 +27,9 @@ Deno.test("test toRows(children=items)", function () {
   );
 
   const expected = [
+    { id: 2, parentId: null },
     { id: 1, parentId: null },
     { id: 3, parentId: 1 },
-    { id: 2, parentId: null },
   ];
 
   assertEquals(result, expected, "数据不一致");
